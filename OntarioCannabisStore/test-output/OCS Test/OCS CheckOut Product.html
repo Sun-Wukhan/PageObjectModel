@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>TestNG:  OCS CheckOut Product</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OCS CheckOut Product</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 08 15:02:50 EDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38195 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cannabistest.OCSVerifyCart.afterEachTestMethod()'><b>afterEachTestMethod</b><br>Test class: cannabistest.OCSVerifyCart<br>Parameters: [TestResult name=verifying_With_Legal_Amount_Of_Product_To_Cart status=FAILURE method=OCSVerifyCart.verifying_With_Legal_Amount_Of_Product_To_Cart()[pri:1, instance:cannabistest.OCSVerifyCart@44a3ec6b] output=Starting test up]</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Navids-MacBook-Pro.local&apos;, ip: &apos;2607:fea8:a460:717:0:0:0:3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;13.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at base.BaseX2.captureScreenshot(BaseX2.java:251)
+	at base.BaseX2.afterEachTestMethod(BaseX2.java:79)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532756055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1532756055'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Navids-MacBook-Pro.local&apos;, ip: &apos;2607:fea8:a460:717:0:0:0:3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;13.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at base.BaseX2.captureScreenshot(BaseX2.java:251)
+	at base.BaseX2.afterEachTestMethod(BaseX2.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></div></td>
+<td>0</td>
+<td>cannabistest.OCSVerifyCart@44a3ec6b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cannabistest.OCSVerifyCart.verifying_With_Legal_Amount_Of_Product_To_Cart()'><b>verifying_With_Legal_Amount_Of_Product_To_Cart</b><br>Test class: cannabistest.OCSVerifyCart<br/>
+<a href="#Output-1047477166" onClick='toggleBox("Output-1047477166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1047477166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1047477166">
+Starting test up<br/>
+Send keys to: Month<br/>
+Sent keys to: Month<br/>
+Send keys to: Day<br/>
+Sent keys to: Day<br/>
+Send keys to: Year<br/>
+Sent keys to: Year<br/>
+Click on: Identity<br/>
+Clicked on: Identity<br/>
+Click on: weight<br/>
+Clicked on: weight<br/>
+Click on: add to Cart<br/>
+Clicked on: add to Cart<br/>
+Click on: Viewing Shopping Cart<br/>
+Clicked on: Viewing Shopping Cart<br/>
+Click on: Agreeing to Terms and Conditions<br/>
+Clicked on: Agreeing to Terms and Conditions<br/>
+Click on: Checking Out Button<br/>
+FAILED! Test has been failed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn--primary full-width js-checkout-button&quot;&gt;...&lt;/button&gt; is not clickable at point (1350, 675). Other element would receive the click: &lt;div id=&quot;IPEbgCover128432&quot; onclick=&quot;javascript:ipe128432.clWin()&quot; style=&quot;position: fixed; left: 0px; top: 0px; display: block;margin:0;padding:0; z-index: 2147483646; background-color: black; width: 100%; height: 110%;opacity: 0.60; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Navids-MacBook-Pro.local&apos;, ip: &apos;2607:fea8:a460:717:0:0:0:3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/5m/7d0d0c8s7zd...}, goog:chromeOptions: {debuggerAddress: localhost:50829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64f64e2c3d96eaceb40b3176660882a6
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at base.ReporterMethods.click(ReporterMethods.java:31)
+	at cannabispage.OCSCheckOutPage.verifying_cart_and_entering_credentials(OCSCheckOutPage.java:183)
+	at cannabistest.OCSVerifyCart.verifying_With_Legal_Amount_Of_Product_To_Cart(OCSVerifyCart.java:36)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1047477166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1047477166'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn--primary full-width js-checkout-button&quot;&gt;...&lt;/button&gt; is not clickable at point (1350, 675). Other element would receive the click: &lt;div id=&quot;IPEbgCover128432&quot; onclick=&quot;javascript:ipe128432.clWin()&quot; style=&quot;position: fixed; left: 0px; top: 0px; display: block;margin:0;padding:0; z-index: 2147483646; background-color: black; width: 100%; height: 110%;opacity: 0.60; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Navids-MacBook-Pro.local&apos;, ip: &apos;2607:fea8:a460:717:0:0:0:3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/5m/7d0d0c8s7zd...}, goog:chromeOptions: {debuggerAddress: localhost:50829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64f64e2c3d96eaceb40b3176660882a6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at base.ReporterMethods.click(ReporterMethods.java:31)
+	at cannabispage.OCSCheckOutPage.verifying_cart_and_entering_credentials(OCSCheckOutPage.java:183)
+	at cannabistest.OCSVerifyCart.verifying_With_Legal_Amount_Of_Product_To_Cart(OCSVerifyCart.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></div></td>
+<td>14</td>
+<td>cannabistest.OCSVerifyCart@44a3ec6b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cannabistest.OCSVerifyCart.verifying_With_Illegal_Amount_Of_Product_To_Cart()'><b>verifying_With_Illegal_Amount_Of_Product_To_Cart</b><br>Test class: cannabistest.OCSVerifyCart<br/>
+<a href="#Output-1614133563" onClick='toggleBox("Output-1614133563", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1614133563" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1614133563">
+Starting test up<br/>
+Send keys to: Month<br/>
+Sent keys to: Month<br/>
+Send keys to: Day<br/>
+Sent keys to: Day<br/>
+Send keys to: Year<br/>
+Sent keys to: Year<br/>
+Click on: Identity<br/>
+Clicked on: Identity<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Strain of product, selecting weight<br/>
+Clicked on: Strain of product, selecting weight<br/>
+Click on: Adding the first item to cart<br/>
+Clicked on: Adding the first item to cart<br/>
+Click on: Adding the second item to cart<br/>
+Clicked on: Adding the second item to cart<br/>
+Click on: Adding the third item to cart<br/>
+Clicked on: Adding the third item to cart<br/>
+Click on: Adding the first item to cart<br/>
+Clicked on: Adding the first item to cart<br/>
+Click on: Adding the second item to cart<br/>
+Clicked on: Adding the second item to cart<br/>
+Click on: Adding the third item to cart<br/>
+Clicked on: Adding the third item to cart<br/>
+Click on: Adding the first item to cart<br/>
+Clicked on: Adding the first item to cart<br/>
+Click on: Adding the second item to cart<br/>
+Clicked on: Adding the second item to cart<br/>
+Click on: Adding the third item to cart<br/>
+Clicked on: Adding the third item to cart<br/>
+Click on: clicking on view shopping cart<br/>
+Clicked on: clicking on view shopping cart<br/>
+SUCCESS! Test has been passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>cannabistest.OCSVerifyCart@44a3ec6b</td></tr>
+</table><p>
+</body>
+</html>

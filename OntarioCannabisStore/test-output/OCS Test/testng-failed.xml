@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OCS Test]" guice-stage="DEVELOPMENT">
+  <parameter name="useCloudEnv" value="Cloud"/>
+  <parameter name="os" value="mac"/>
+  <parameter name="os_version" value="10.15.4"/>
+  <parameter name="browserVersion" value=" 81.0.4044.129"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="url" value="https://ocs.ca/"/>
+  <test name="OCS CheckOut Product(failed)">
+    <classes>
+      <class name="cannabistest.OCSVerifyCart">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterEachTestMethod"/>
+          <include name="verifying_With_Legal_Amount_Of_Product_To_Cart"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="closeOut"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- cannabistest.OCSVerifyCart -->
+    </classes>
+  </test> <!-- OCS CheckOut Product(failed) -->
+</suite> <!-- Failed suite [OCS Test] -->

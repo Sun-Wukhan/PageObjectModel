@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test name="OntarioCannabisStore(failed)">
+    <classes>
+      <class name="cannabistest.OCSVerifyCart">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifying_With_Illegal_Amount_Of_Product_To_Cart"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterEachTestMethod"/>
+          <include name="verifying_With_Legal_Amount_Of_Product_To_Cart"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="closeOut"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- cannabistest.OCSVerifyCart -->
+      <class name="cannabistest.OCSAgeVerifyTest">
+        <methods>
+          <include name="invalid_Legal_Age_Credentials"/>
+          <include name="setUp"/>
+          <include name="valid_Legal_Age_Credentials"/>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="closeOut"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- cannabistest.OCSAgeVerifyTest -->
+    </classes>
+  </test> <!-- OntarioCannabisStore(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

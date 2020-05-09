@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Test" parallel="false" >
+    <!--parallel="false"-->
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="false"/>
+    <parameter name="os" value="mac"/>
+    <parameter name="os_version" value="10.15.4"/>
+    <parameter name="browserVersion" value="81.0.4044.138"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://ocs.ca/"/>
+
+
+    <test name = "OCS Verification">
+
+        <classes>
+            <!--  <class name="page_objects_test.HomePageTest"/>-->
+            <class name="cannabistest.OCSVerifyCart"/>
+
+        </classes>
+
+        <!--Hello-->
+    </test>
+
+</suite>
